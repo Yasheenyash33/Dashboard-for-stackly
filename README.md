@@ -62,7 +62,7 @@ The Training Management System is designed to streamline the process of organizi
    b. Create a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate  / On Windows: venv\Scripts\activate
    ```
 
    c. Install Python dependencies:

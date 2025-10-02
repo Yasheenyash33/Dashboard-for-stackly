@@ -22,13 +22,10 @@ UTC = timezone.utc
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 
-# Add the parent directory to the path so we can import our modules
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from backend.database import SessionLocal, engine
-from backend.models import User, Session as TrainingSession, UserRole, SessionStatus
-from backend.crud import create_user, create_session
-import backend.schemas as schemas
+from .database import SessionLocal, engine
+from .models import User, Session as TrainingSession, UserRole, SessionStatus
+from .crud import create_user, create_session
+from . import schemas
 
 def create_sample_users(db: Session):
     """Create sample users with different roles."""
